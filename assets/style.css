@@ -1,0 +1,128 @@
+/* CSS Responsive untuk Kalkulator Keuangan */
+
+/* Gaya umum untuk body, h1, dan elemen lainnya */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f59d06;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #bc1f1f;
+    border-radius: 10px;
+    background-color: #fffdfc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #14c09e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0671f5;
+}
+
+.table-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #bc1f1f;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    overflow-x: auto; /* Membuat tabel dapat di-scroll jika melewati lebar layar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ef0000;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #14c09e;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #6f0a0a;
+    color: #fff;
+}
+
+/* Responsif untuk perangkat dengan lebar layar di bawah 600px */
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"], select {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .table-container {
+        padding: 15px;
+    }
+}
